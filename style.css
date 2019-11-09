@@ -25,6 +25,10 @@ nav {
   font-size: 18px;
 }
 
+nav:hover {
+  background-color: #9d2053;
+}
+
 nav ul {
   display: inline-block;
   list-style-type: none;
@@ -36,6 +40,10 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 20px 30px;
+}
+
+nav a:hover {
+  color: #ffedbf;
 }
 section {
   width: 50%;
@@ -100,6 +108,7 @@ input[type="submit"] {
   font-weight: bold;
   border: 0px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
