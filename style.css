@@ -14,6 +14,11 @@ h1 {
   font-weight: bold;
 }
 
+h1:hover {
+  font-size: 28px;
+  transition: 0.1s font-size linear;
+}
+
 nav {
   margin: 0 auto;
   background-color: #867f8f;
