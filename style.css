@@ -3,6 +3,11 @@ body {
   background-color: #ffebeb;
   color: #504163;
 }
+
+section {
+  background-color: #fff;
+  padding: 30px 30px;
+}
 a {
   color: #c22557;
   text-decoration: none;
@@ -21,7 +26,9 @@ h1:hover {
   font-size: 28px;
   transition: 0.1s font-size linear;
 }
-
+footer a {
+  color: #ffffff;
+}
 nav {
   margin: 0 auto;
   background-color: #867f8f;
@@ -42,55 +49,27 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  padding: 20px 30px;
+  padding: 20px 10px;
 }
 
 nav a:hover {
   color: #ffedbf;
 }
-section {
-  width: 50%;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 30px 30px;
-}
 
 label {
-  width: 25%;
+  width: 100%;
   display: inline-block;
 }
 
 input:nth-of-type(-n + 3),
 select {
-  width: 70%;
-  display: inline-block;
+  width: 95%;
   padding: 10px 10px;
   margin: 20px 0px;
   -ms-box-sizing: content-box; /*The box-sizing property allows you to define certain elements to fit an area in a certain way. This forces the browser to render the box with the specified width and height, and place the border and padding inside the box. */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-}
-
-input[type="radio"] {
-  display: inline-block;
-}
-
-label[for="yes"],
-label[for="no"] {
-  width: 5%;
-}
-
-label[for="reading"], /* Wouldn't be better here to have a class for the checkbox labels? so if I had 100 checkbox labels I wouldn't have to write the code for each "for". Thank you*/
-label[for="sleeping"],
-label[for="tvshows"] {
-  width: 15%;
-}
-
-label[for="more-info"] {
-  width: 70%;
-  display: block;
-  margin: 20px 0px;
 }
 
 textarea {
@@ -134,15 +113,39 @@ footer {
   display: inline-block !important;
   position: relative;
 }
-@media screen and (max-width: 1150px) {
-  input:nth-of-type(-n + 3),
-  select {
-    width: 95%;
-    padding: 10px 10px;
+label {
+  width: 30%;
+  display: inline-block;
+}
+
+label[for="more-info"] {
+  width: 100%;
+  display: block;
+  margin: 20px 0px;
+}
+@media screen and (min-width: 600px) {
+  section {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 30px;
+  }
+  nav li {
+    display: inline-block;
+    padding: 20px 30px;
+  }
+  label[for="reading"], /* Wouldn't be better here to have a class for the checkbox labels? so if I had 100 checkbox labels I wouldn't have to write the code for each "for". Thank you*/
+  label[for="sleeping"],
+  label[for="tvshows"] {
+    width: 15%;
+  }
+  label[for="more-info"] {
+    width: 60%;
+    display: block;
     margin: 20px 0px;
-    -ms-box-sizing: content-box; /*The box-sizing property allows you to define certain elements to fit an area in a certain way. This forces the browser to render the box with the specified width and height, and place the border and padding inside the box. */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+  }
+  label {
+    width: 30%;
+    display: inline-block;
   }
 }
