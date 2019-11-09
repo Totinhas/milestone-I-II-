@@ -3,8 +3,11 @@ body {
   background-color: #ffebeb;
   color: #504163;
 }
-
 a {
+  color: #c22557;
+  text-decoration: none;
+}
+nav a {
   color: #fff;
   text-decoration: none;
 }
@@ -123,6 +126,14 @@ footer {
   padding: 20px 0px;
 }
 
+.far {
+  margin-right: 10px;
+}
+.far,
+#email > p {
+  display: inline-block !important;
+  position: relative;
+}
 @media screen and (max-width: 1150px) {
   input:nth-of-type(-n + 3),
   select {
