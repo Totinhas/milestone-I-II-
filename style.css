@@ -111,6 +111,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="submit"]:hover {
+  background-color: #9d2053;
+}
+
 footer {
   background-color: #0e002f;
   color: #fff;
