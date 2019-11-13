@@ -3,6 +3,7 @@ body {
   background-color: #ffebeb;
   color: #504163;
   margin: 0px;
+  position: relative;
 }
 
 p {
@@ -36,6 +37,8 @@ footer {
   position: absolute;
   width: 100%;
   bottom: 0;
+  padding-top: 200px;
+  position: static;
 }
 footer a {
   color: #ffffff;
@@ -129,16 +132,58 @@ label[for="more-info"] {
 
 .far,
 .fab {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .container {
-  text-align: left !important;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  text-align: center;
+  margin-top: 20px;
 }
+
+#main-contacts {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#email,
+#twitter {
+  padding: 50px 50px;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+iframe {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  border: 0;
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.map-responsive {
+  padding: 30px;
+}
+.map-responsive h2 {
+  margin-top: 0px;
+}
+
+.container > div:last-of-type {
+  margin-top: 5%;
+}
+
 @media only screen and (min-width: 600px) {
-  .container {
-    text-align: center;
-  }
   .form {
     width: 50%;
     margin: 0 auto;
@@ -154,5 +199,29 @@ label[for="more-info"] {
   .check {
     display: inline-block;
     position: relative;
+    width: 45%;
+  }
+  .container {
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+    position: relative;
+    width: 100%;
+  }
+  #email,
+  #twitter {
+    padding: 50px 50px;
+    width: 60%;
+  }
+
+  .container > div:first-of-type {
+    margin-right: 5%;
+  }
+
+  .container > div:last-of-type {
+    margin-top: 0;
+  }
+  .wrap {
+    width: 80%;
+    margin: 0 auto;
   }
 }
