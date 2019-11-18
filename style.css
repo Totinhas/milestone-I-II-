@@ -11,7 +11,11 @@ p {
   font-family: Helvetica, sans-serif;
 }
 
-.form {
+#background > p {
+  text-align: justify;
+}
+.form,
+#background {
   background-color: #fff;
   padding: 30px 30px;
 }
@@ -183,8 +187,39 @@ iframe {
   margin-top: 5%;
 }
 
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #504163;
+  color: #fff;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.btn:hover {
+  background-color: #9d2053;
+}
+
+.btn > a {
+  color: #fff;
+}
 @media only screen and (min-width: 600px) {
-  .form {
+  .form,
+  #background {
     width: 50%;
     margin: 0 auto;
     background-color: #fff;
