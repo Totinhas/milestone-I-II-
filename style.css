@@ -139,6 +139,9 @@ label[for="more-info"] {
   font-size: 30px;
 }
 
+#text > p {
+  text-align: justify;
+}
 .container {
   display: block;
   position: relative;
@@ -196,7 +199,6 @@ h3 {
   margin-top: 50px;
 }
 .btn {
-  width: 100%;
   margin: 20px 0px;
   padding: 10px 10px;
   font-size: 16px;
@@ -216,6 +218,14 @@ h3 {
 
 .btn > a {
   color: #fff;
+}
+.fas {
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  display: block !important;
+  position: relative;
+  padding: 30px 0px;
 }
 @media only screen and (min-width: 600px) {
   .form,
@@ -258,5 +268,19 @@ h3 {
   .wrap {
     width: 80%;
     margin: 0 auto;
+  }
+  #photo img {
+    width: 150px;
+  }
+  #photo {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    margin-left: 50px;
+  }
+
+  #text {
+    display: inline-block;
+    width: 50%;
   }
 }
