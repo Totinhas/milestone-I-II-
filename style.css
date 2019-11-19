@@ -18,6 +18,7 @@ p {
 #background {
   background-color: #fff;
   padding: 30px 30px;
+  margin-bottom: 60px;
 }
 a {
   color: #c22557;
@@ -42,6 +43,7 @@ footer {
   width: 100%;
   bottom: 0;
   padding-top: 200px;
+
   position: fixed;
 }
 footer a {
@@ -227,6 +229,7 @@ h3 {
   position: relative;
   padding: 30px 0px;
 }
+
 @media only screen and (min-width: 600px) {
   .form,
   #background {
@@ -234,6 +237,7 @@ h3 {
     margin: 0 auto;
     background-color: #fff;
     padding: 30px 30px;
+    margin-bottom: 60px;
   }
 
   nav li {
