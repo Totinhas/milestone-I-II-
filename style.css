@@ -80,7 +80,7 @@ input[type="text"],
 input[type="date"],
 select {
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 10px;
   margin: 20px 0px;
   -ms-box-sizing: border-box;
   /*The box-sizing property allows you to define certain elements to fit an area in a certain way. This forces the browser to render the box with the specified width and height, and place the border and padding inside the box. */
@@ -93,7 +93,7 @@ textarea {
   height: 80px;
   resize: none;
   margin: 0px;
-  padding: 0px;
+  padding: 10px 10px;
   box-sizing: border-box;
 }
 
