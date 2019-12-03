@@ -88,6 +88,18 @@ select {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+input[type="number"] {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 0 auto;
+  -ms-box-sizing: border-box;
+  /*The box-sizing property allows you to define certain elements to fit an area in a certain way. This forces the browser to render the box with the specified width and height, and place the border and padding inside the box. */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+}
 textarea {
   width: 100%;
   height: 80px;
@@ -97,7 +109,8 @@ textarea {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button {
   width: 100%;
   margin: 20px 0px;
   padding: 10px 10px;
@@ -136,6 +149,9 @@ label[for="more-info"] {
   width: 80%;
 }
 
+.cnt {
+  text-align: center !important;
+}
 .far,
 .fab {
   font-size: 30px;
@@ -229,7 +245,32 @@ h3 {
   position: relative;
   padding: 30px 0px;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+#fizz {
+  display: none;
+  font-size: 60px;
+  color: #9d2053;
+}
+#buzz {
+  display: none;
+  font-size: 60px;
+  color: #504163;
+}
+
+#fizzbuzz {
+  display: none;
+  font-size: 60px;
+  color: #0e002f;
+}
+
+#try {
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .form,
   #background {

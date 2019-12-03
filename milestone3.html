@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link  href="style.css" rel="stylesheet" />
+    
+    <link
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    rel="stylesheet"
+  />
+    <title>Milestone III</title>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="contacts.html">Milestone III</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="background">
+        <h2>Milestone 3</h2>
+        <h3>FizzBuzz JS Game</h3>
+        <p class="cnt">In order to start please insert a number in the box below</p>
+        <input type="number" id="myNumber">
+        <button onclick="askNumber()">Play</button>
+       
+        <p class="cnt">Your number is <span id="nr"></span>.<span id="try">If you want to play please try another number.</span></p>
+        <h3 id="fizz">FIZZ</h3>
+        <h3 id="buzz">BUZZ</h3>
+        <h3 id="fizzbuzz">FIZZBUZZ</h3>
+          
+      </div>
+     
+       
+  
+  
+   
+    <footer>
+        <strong><a href="mailto:sluisc01@mail.bbk.ac.uk?subject:My first milestone">Sara Bretes</strong> - Student #13175876
+      </footer>
+  </body>
+  <script>
+ function askNumber() {
+  var x = document.getElementById("myNumber").value;
+  document.getElementById("nr").innerHTML = x;
+
+  if (
+    document.getElementById("myNumber").value % 5 === 0 &&
+    document.getElementById("myNumber").value % 3 === 0
+  ) {
+    document.getElementById("fizzbuzz").style.display = "block";
+  } else if (document.getElementById("myNumber").value % 5 === 0) {
+    document.getElementById("buzz").style.display = "block";
+  } else if (document.getElementById("myNumber").value % 3 === 0) {
+    document.getElementById("fizz").style.display = "block";
+  } else {
+    document.getElementById("try").style.display = "block";
+  }
+}
+</script>
+</html>
