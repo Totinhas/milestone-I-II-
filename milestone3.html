@@ -29,9 +29,8 @@
         <button onclick="askNumber()">Play</button>
        
         <p class="cnt">Your number is <span id="nr"></span>.<span id="try">If you want to play please try another number.</span></p>
-        <h3 id="fizz">FIZZ</h3>
-        <h3 id="buzz">BUZZ</h3>
-        <h3 id="fizzbuzz">FIZZBUZZ</h3>
+     
+        <h3 id="fizzbuzz"></h3>
           
       </div>
      
@@ -45,21 +44,28 @@
   </body>
   <script>
  function askNumber() {
-  var x = document.getElementById("myNumber").value;
-  document.getElementById("nr").innerHTML = x;
+  var myNumber = document.getElementById("myNumber").value;
+  document.getElementById("nr").innerHTML = myNumber;
+  var s="";
+  
+  if (
+    myNumber % 5 === 0
+   
+  ) {
+    s =  s + "Fizz"
+  }
 
   if (
-    document.getElementById("myNumber").value % 5 === 0 &&
-    document.getElementById("myNumber").value % 3 === 0
+    myNumber % 3 === 0
+   
   ) {
-    document.getElementById("fizzbuzz").style.display = "block";
-  } else if (document.getElementById("myNumber").value % 5 === 0) {
-    document.getElementById("buzz").style.display = "block";
-  } else if (document.getElementById("myNumber").value % 3 === 0) {
-    document.getElementById("fizz").style.display = "block";
-  } else {
-    document.getElementById("try").style.display = "block";
+    s =  s + "Buzz"
   }
+
+  document.getElementById("fizzbuzz").innerHTML = s;
 }
+
+
+
 </script>
 </html>

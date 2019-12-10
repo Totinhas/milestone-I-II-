@@ -251,19 +251,8 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-#fizz {
-  display: none;
-  font-size: 60px;
-  color: #9d2053;
-}
-#buzz {
-  display: none;
-  font-size: 60px;
-  color: #504163;
-}
-
 #fizzbuzz {
-  display: none;
+  display: block;
   font-size: 60px;
   color: #0e002f;
 }
