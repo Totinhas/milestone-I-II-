@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Milestone 1 of web development and user experience">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Sara Bretes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first milestone</title>
+    <link href="FizzBuzzStyle.css" rel="stylesheet">
+  </head>
+  <body>
+   
+    <section class="form">
+   
+
+
+      <form id="fizzBuzz">
+        <input type="number" id="fizzvalue">
+        <input type="submit" id="smbtn" >
+      </form>
+
+
+      <ul id="results"></ul> <ul id="fizzorbuzz"></ul>
+
+    </section>
+    <footer>
+      <strong><a href="mailto:sluisc01@mail.bbk.ac.uk?subject:My first milestone">Sara Bretes</strong> - Student #13175876
+    </footer>
+
+
+
+ <!--Script Playing around -->
+<script>
+  const form = document.getElementById("fizzBuzz");
+  const input = document.getElementById("fizzvalue")
+  const smbtn = document.getElementById("smbtn")
+  const submitHandler = function(event) {
+    //prevents form from reloading
+    event.preventDefault ()
+    //cleans up results
+    results.innerHTML = ''
+    fizzorbuzz.innerHTML = ''
+    //populates results again
+    for(let i = 1; i <= input.value; i++){
+   
+      const newLi = document.createElement("li")
+      newLi.innerText = i;
+      results.append(newLi)
+
+
+ 
+      
+       if (i % 3 === 0) {
+        newLi.innerText = i + " Fizz"
+       }
+       if (i % 5 === 0) {
+        newLi.innerText = i + " Buzz"
+       }
+       if (i % 15 === 0) {
+        newLi.innerText = i + " FizzBuzz"
+       } 
+        
+    } 
+ 
+  };
+
+
+  
+  smbtn.onclick = submitHandler;
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>
