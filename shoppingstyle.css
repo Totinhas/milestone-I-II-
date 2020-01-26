@@ -54,12 +54,18 @@ p {
 .quantity-label {
   display: block;
   margin-bottom: 10px;
+  width: 20% !important;
 }
 
+.quantity {
+  width: 50% !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+}
 form {
   display: inline-block;
   position: relative;
-  width: 45%;
+  width: 60%;
 }
 
 .total {
@@ -68,6 +74,12 @@ form {
   position: relative;
 }
 
+.add,
+.remove {
+  width: 45% !important;
+  display: inline-block !important;
+  position: relative !important;
+}
 .total-price {
   font-size: 20px;
   line-height: 20px;

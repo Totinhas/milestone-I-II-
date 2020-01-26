@@ -35,8 +35,10 @@
             <p class="price">Price: <span class="value">£15.99</span></p>
             <form >
               <label class="quantity-label">Quantity</label class="quantity-label">
-              <input id="Log-mouse" type="number" name="quantity" max="10">
-              <button type="button">Add to basket</button>
+              <input class="quantity" type="number" name="quantity">
+              <button onclick="add()" class="add" type="button">Add</button>
+              <button onclick="remove()" class="remove" type="button">Remove</button>
+              <button onclick="bla()" class="remove" type="button">total test</button>
             </form>
           </div>
       </div>
@@ -44,16 +46,17 @@
       <div class="products">
 
         <div class="prod-image">
-          <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/51KAfU1aeKL._SX569_.jpg">
+          <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/819miX6IC4L._AC_SX679_.jpg">
         </div>
         <div class="product-details">
-          <h4>Logitech Pebble M350 Pink</h4>
-          <p class="small">Modern, slim and beautiful pebble shape: Logitech Pebble has standout simplicity with a design that is nice to hold, feels great in your hand and is easy to carry around.</p>
-          <p class="price">Price: <span class="value">£15.99</span></p>
+          <h4>Logitech K380 Multi-Device Bluetooth Keyboard</h4>
+          <p class="small">Smart: Simplify your life; with the K380 wireless keyboard, type on and switch among any three Bluetooth devices.</p>
+          <p class="price">Price: <span class="value">£20.99</span></p>
           <form >
             <label class="quantity-label">Quantity</label class="quantity-label">
-            <input id="Log-mouse" type="number" name="quantity" max="10">
-            <button type="button">Add to basket</button>
+            <input class="quantity" type="number" name="quantity" max="10">
+            <button onclick="add()" class="add" type="button">Add</button>
+            <button onclick="remove()" class="remove" type="button">Remove</button>
           </form>
         </div>
     </div>
@@ -62,16 +65,17 @@
       <div class="products">
 
         <div class="prod-image">
-          <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/51KAfU1aeKL._SX569_.jpg">
+          <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/61kH8An8nvL._AC_SX679_.jpg">
         </div>
         <div class="product-details">
-          <h4>Logitech Pebble M350 Pink</h4>
-          <p class="small">Modern, slim and beautiful pebble shape: Logitech Pebble has standout simplicity with a design that is nice to hold, feels great in your hand and is easy to carry around.</p>
-          <p class="price">Price: <span class="value">£15.99</span></p>
+          <h4>Anker SoundCore min</h4>
+          <p class="small">Compact And Powerful: Super-portable Bluetooth speaker delivers powerful sound and robust bass through an advanced 5W driver and passive subwoofer.</p>
+          <p class="price">Price: <span class="value">£22.99</span></p>
           <form >
             <label class="quantity-label">Quantity</label class="quantity-label">
-            <input id="Log-mouse" type="number" name="quantity" max="10">
-            <button type="button">Add to basket</button>
+            <input class="quantity" type="number" name="quantity" max="10">
+            <button onclick="add()" class="add" type="button">Add</button>
+            <button onclick="remove()" class="remove" type="button">Remove</button>
           </form>
         </div>
     </div>
@@ -86,7 +90,7 @@
     </footer>
 
 
-
+    <script src="javascript.js"></script>
 
   </body>
 </html>
