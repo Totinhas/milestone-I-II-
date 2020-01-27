@@ -51,6 +51,9 @@ p {
   position: relative;
 }
 
+.display-none {
+  display: none;
+}
 .quantity-label {
   display: block;
   margin-bottom: 10px;
