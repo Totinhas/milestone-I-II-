@@ -79,9 +79,20 @@ form {
 
 .add,
 .remove {
-  width: 45% !important;
+  width: 30% !important;
   display: inline-block !important;
   position: relative !important;
+text-align: center;
+  margin: 20px 0px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #504163;
+  color: #fff;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 }
 .total-price {
   font-size: 20px;

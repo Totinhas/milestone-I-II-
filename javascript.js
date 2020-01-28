@@ -1,39 +1,73 @@
-let price = document.getElementsByClassName("value");
-let addbtn = document.getElementsByClassName("add");
 let removebtn = document.getElementsByClassName("remove");
-let quantity = document.getElementsByClassName("quantity");
 
-function remove() {}
+let products = [
+  {
+    name: "mouse",
+    tag: "mouse",
+    price: 15.99,
+    count: ""
+  },
+  {
+    name: "keyboard",
+    tag: "keyboard",
+    price: 20.99,
+    count: ""
+  },
+  {
+    name: "speaker",
+    tag: "speaker",
+    price: 22.99,
+    count: ""
+  }
+];
 
 function add() {
-  for (let i = 0; i < price.length; i++) {
-    console.log(price[i].innerText);
-    
-    //only show the remove button if there are items of that type on the cart
-    //add.addEventListener ("click", function () {
-     // removebtn.classList.toggle("display-none");
-    //})
-  } 
-}
-function total() {
-  for (let q = 0; q < quantity.length; q++) {
-    console.log(quantity[q].innerText);
+  let quantity = document.getElementsByClassName("quantity");
+  let totalPrice = [];
+  let nameCount = 0;
+  for (let i = 0; i < quantity.length; i++) {
+    products[i].count = quantity[i].value;
+  }
+  for (var name in products) {
+    nameCount = nameCount + 1;
+  }
+  for (let i = 0; i < nameCount; i++) {
+    totalPrice[i] = products[i].price * products[i].count;
+
+    var sum = totalPrice.reduce(function(a, b) {
+      return a + b;
+    }, 0);
+
+    document.getElementById("total-value").innerHTML = sum;
   }
 }
 
+/*for (let addCounter = 0; addCounter < addBtn.length; addCounter++) {
+  addBtn[addCounter].addEventListener("click", function() {
+    cartNumbers();
+    totalCost(products[addCounter]);
+  });
+}
 
+function cartNumbers() {
+  let productNumbers = localStorage.getItem("cartNumbers");
 
-function bla() {
-  let total = document.getElementById("total-value");
-
-  if (quantity > 0) {
-    total = quantity * 2;
+  productNumbers = parseInt(productNumbers);
+  if (productNumbers) {
+    localStorage.setItem("cartNumbers", productNumbers + 1);
+  } else {
+    localStorage.setItem("cartNumbers", 1);
   }
 }
 
+function totalCost(product) {
+  //console.log("The product price is", product.price);
+  let cartCost = localStorage.getItem("totalCost");
 
-//Youtube 1
-
-function () {
-  let 
-}
+  if (cartCost != null) {
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost + product.price);
+  } else {
+    localStorage.setItem("totalCost", product.price);
+  }
+} */
