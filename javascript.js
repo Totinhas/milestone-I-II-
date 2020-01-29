@@ -2,19 +2,19 @@
 
 let products = [
   {
-    name: "mouse",
+    name: "Logitech Pebble M350 Pink",
     tag: "mouse",
     price: 15.99,
     count: ""
   },
   {
-    name: "keyboard",
+    name: "Logitech K380 Multi-Device Bluetooth Keyboard",
     tag: "keyboard",
     price: 20.99,
     count: ""
   },
   {
-    name: "speaker",
+    name: "Anker SoundCore min",
     tag: "speaker",
     price: 22.99,
     count: ""
@@ -26,6 +26,8 @@ function add() {
   let quantity = document.getElementsByClassName("quantity");
   let totalPrice = [];
   let nameCount = 0;
+  let basket = [];
+  let basketSentence = document.getElementById("yourBasket");
   for (let i = 0; i < quantity.length; i++) {
     products[i].count = quantity[i].value;
   }
@@ -38,7 +40,17 @@ function add() {
     var sum = totalPrice.reduce(function(a, b) {
       return a + b;
     }, 0);
+    if (products[i].count != 0) {
+      basket.push(products[i]);
+      const newLi = document.createElement("li");
 
+      newLi.innerText = products[i].count + " " + products[i].name;
+      if (products[i].name != newLi) {
+        yourBasket.append(newLi);
+      }
+
+      console.log(basket);
+    }
     document.getElementById("total-value").innerHTML = sum;
   }
 }
