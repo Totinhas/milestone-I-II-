@@ -1,4 +1,4 @@
-let removebtn = document.getElementsByClassName("remove");
+//list of products
 
 let products = [
   {
@@ -21,6 +21,7 @@ let products = [
   }
 ];
 
+//ADD
 function add() {
   let quantity = document.getElementsByClassName("quantity");
   let totalPrice = [];
@@ -42,32 +43,33 @@ function add() {
   }
 }
 
-/*for (let addCounter = 0; addCounter < addBtn.length; addCounter++) {
-  addBtn[addCounter].addEventListener("click", function() {
-    cartNumbers();
-    totalCost(products[addCounter]);
-  });
-}
+//REMOVE
+let removeBtn = document.querySelectorAll(".remove");
+let quantity = document.querySelectorAll(".quantity");
 
-function cartNumbers() {
-  let productNumbers = localStorage.getItem("cartNumbers");
+removeBtn.forEach(function(check) {
+  check.addEventListener("click", checkIndex);
+});
 
-  productNumbers = parseInt(productNumbers);
-  if (productNumbers) {
-    localStorage.setItem("cartNumbers", productNumbers + 1);
-  } else {
-    localStorage.setItem("cartNumbers", 1);
+function checkIndex(event) {
+  let totalPrice = [];
+  let nameCount = 0;
+  var index = Array.from(removeBtn).indexOf(event.target);
+  console.log(index);
+  quantity[index].value = "";
+  products[index].count = quantity[index].value;
+  console.log(products[index].count);
+
+  for (var name in products) {
+    nameCount = nameCount + 1;
+  }
+  for (let i = 0; i < nameCount; i++) {
+    totalPrice[i] = products[i].price * products[i].count;
+
+    var sum = totalPrice.reduce(function(a, b) {
+      return a + b;
+    }, 0);
+
+    document.getElementById("total-value").innerHTML = sum;
   }
 }
-
-function totalCost(product) {
-  //console.log("The product price is", product.price);
-  let cartCost = localStorage.getItem("totalCost");
-
-  if (cartCost != null) {
-    cartCost = parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost + product.price);
-  } else {
-    localStorage.setItem("totalCost", product.price);
-  }
-} */
