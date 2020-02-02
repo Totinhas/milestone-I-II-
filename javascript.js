@@ -20,13 +20,13 @@ let products = [
     count: ""
   }
 ];
-
+let basket = [];
 //ADD
 function add() {
   let quantity = document.getElementsByClassName("quantity");
   let totalPrice = [];
   let nameCount = 0;
-  let basket = [];
+
   let basketSentence = document.getElementById("yourBasket");
   for (let i = 0; i < quantity.length; i++) {
     products[i].count = quantity[i].value;
@@ -68,8 +68,12 @@ function checkIndex(event) {
   quantity[index].value = "";
   products[index].count = quantity[index].value;
   yourBasket.innerHTML = "";
+
   for (var name in products) {
     nameCount = nameCount + 1;
+  }
+  for (let i = 0; i < quantity.length; i++) {
+    products[i].count = quantity[i].value;
   }
   for (let i = 0; i < nameCount; i++) {
     totalPrice[i] = products[i].price * products[i].count;
@@ -77,6 +81,14 @@ function checkIndex(event) {
     var sum = totalPrice.reduce(function(a, b) {
       return a + b;
     }, 0);
+
+    if (products[i].count != 0) {
+      basket.push(products[i]);
+      const newLi = document.createElement("li");
+
+      newLi.innerText = products[i].count + " " + products[i].name;
+      yourBasket.append(newLi);
+    }
 
     document.getElementById("total-value").innerHTML = sum;
   }
