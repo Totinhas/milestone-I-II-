@@ -67,7 +67,7 @@ function checkIndex(event) {
   console.log(index);
   quantity[index].value = "";
   products[index].count = quantity[index].value;
-  yourBasket[index].innerHTML = "";
+  yourBasket.innerHTML = "";
   for (var name in products) {
     nameCount = nameCount + 1;
   }
