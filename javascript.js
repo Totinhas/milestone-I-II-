@@ -34,6 +34,7 @@ function add() {
   for (var name in products) {
     nameCount = nameCount + 1;
   }
+  yourBasket.innerHTML = "";
   for (let i = 0; i < nameCount; i++) {
     totalPrice[i] = products[i].price * products[i].count;
 
@@ -45,11 +46,7 @@ function add() {
       const newLi = document.createElement("li");
 
       newLi.innerText = products[i].count + " " + products[i].name;
-      if (products[i].name != newLi) {
-        yourBasket.append(newLi);
-      }
-
-      console.log(basket);
+      yourBasket.append(newLi);
     }
     document.getElementById("total-value").innerHTML = sum;
   }
@@ -70,8 +67,7 @@ function checkIndex(event) {
   console.log(index);
   quantity[index].value = "";
   products[index].count = quantity[index].value;
-  console.log(products[index].count);
-
+  yourBasket[index].innerHTML = "";
   for (var name in products) {
     nameCount = nameCount + 1;
   }
