@@ -20,3 +20,32 @@ document.getElementById('searchButton').addEventListener('click', () => {
     if (searchTerm)
         searchWeather(searchTerm);
 });*/
+
+
+const api = {
+    key: "b0fce03b5dfaa1ea39f055c85b334cd0",
+    url: "https://api.openweathermap.org/data/2.5/"
+}
+
+const searchbox = document.querySelector('#inputSearch');
+const btn = document.querySelector('#searchButton');
+searchbox.addEventListener('keypress', setQuery);
+btn.addEventListener("click", setQuery);
+
+function setQuery(evt) {
+
+    getResults(searchbox.value);
+
+
+}
+
+function getResults(query) {
+    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then(weather => {
+            return weather.json();
+        }).then(displayResults);
+}
+
+function displayResults(weather) {
+    console.log(weather);
+}
