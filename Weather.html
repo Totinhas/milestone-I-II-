@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Milestone 1 of web development and user experience">
-    <meta name="keywords" content="HTML,CSS">
-    <meta name="author" content="Sara Bretes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first milestone</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="shoppingstyle.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
-          <li><a href="milestone3.html">Milestone III</a></li>
-          <li><a href="shoppingCar.html">Shopping car</a></li>
-          <li><a href="shoppingCar.html">Weather</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="background">
-      <h3>Our products</h3>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Milestone 1 of web development and user experience">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Sara Bretes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first milestone</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="weather.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="milestone3.html">Milestone III</a></li>
+        <li><a href="shoppingCar.html">Shopping car</a></li>
+        <li><a href="shoppingCar.html">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="background">
+    <h3>Weather Forecast</h3>
+    <h4 id="cityInfo"><span id="city">London</span>, <span id="country">United Kingdom</span></h4>
+
+    <div><img id="icon">
     </div>
- 
-    <footer>
-      <strong><a href="mailto:sluisc01@mail.bbk.ac.uk?subject:My first milestone">Sara Bretes</strong> - Student #13175876
-    </footer>
+    <hr>
+
+    <div class="results">
+      <div id="wind">
+        <h5>Wind</h5>
+        <p id="windResult"></p>
+      </div>
+      <div id="temperature">
+        <h5>Temperature</h5>
+        <p id="temepratureResult"></p>
+      </div>
+      <div id="percipitation">
+        <h5>Percipitation</h5>
+        <p id="percipitationResult"></p>
+      </div>
+    </div>
+    <div id="search">
+      <input class="searchControl" type="text" placeholder="City Name or Zip Code" id="inputSearch"></input>
+      <button class="searchControl" id="searchButton">Search</button>
+    </div>
+
+  </div>
 
 
-    <script src="javascript.js"></script>
+  <footer>
+    <strong><a href="mailto:sluisc01@mail.bbk.ac.uk?subject:My first milestone">Sara Bretes</strong> - Student #13175876
+  </footer>
 
-  </body>
+
+
+  <script src="weather.js"></script>
+
+</body>
+
 </html>
