@@ -7,7 +7,7 @@
   <meta name="keywords" content="HTML,CSS">
   <meta name="author" content="Sara Bretes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My first milestone</title>
+  <title>Weather app</title>
   <link href="style.css" rel="stylesheet">
   <link href="weather.css" rel="stylesheet">
 </head>
@@ -21,17 +21,18 @@
         <li><a href="contacts.html">Contacts</a></li>
         <li><a href="milestone3.html">Milestone III</a></li>
         <li><a href="shoppingCar.html">Shopping car</a></li>
-        <li><a href="shoppingCar.html">Weather</a></li>
+        <li><a href="Weather.html">Weather</a></li>
       </ul>
     </nav>
   </header>
   <div id="background">
     <h3>Weather Forecast</h3>
-    <h4 id="cityInfo"><span id="city">London</span>, <span id="country">United Kingdom</span></h4>
-
-    <div><img id="icon">
-    </div>
+    <h4 id="cityInfo"><span id="city"></span>, <span id="country"></span></h4>
+    
     <hr>
+    <div> <img id="icon" src="">
+    </div>
+    
 
     <div class="results">
       <div id="wind">
@@ -40,15 +41,16 @@
       </div>
       <div id="temperature">
         <h5>Temperature</h5>
-        <p id="temepratureResult"></p>
+        <p id="temperatureResult"></p>
       </div>
       <div id="percipitation">
-        <h5>Percipitation</h5>
-        <p id="percipitationResult"></p>
+        <h5>Humidity</h5>
+        <p id="humidityResult"></p>
       </div>
     </div>
     <div id="search">
       <input type="text" placeholder="City Name or Zip Code" id="inputSearch"></input>
+      <p id="errorLocation">Please insert a valid location</p>
       <button id="searchButton">Search</button>
     </div>
 
