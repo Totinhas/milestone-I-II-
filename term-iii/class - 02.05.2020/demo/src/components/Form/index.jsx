@@ -6,7 +6,7 @@ import "./Form.css";
 const Form = ({ children, onSubmit }) => (
   <form className="form" onSubmit={onSubmit}>
     {children}
-    <Button>Submit</Button>
+    <Button disabled={!onSubmit}>Submit</Button>
   </form>
 );
 

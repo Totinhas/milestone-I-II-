@@ -3,13 +3,14 @@ import "./Button.css";
 
 const Button = ({
   children,
-  onClick = () => alert("error"),
+  disabled,
+  onClick = () => null,
   text = "click me badly",
 }) => (
-  <button className="btn" onClick={onClick}>
-    {children || text}
-  </button>
-);
+    <button className="btn" onClick={onClick} disabled={disabled}>
+      {children || text}
+    </button>
+  );
 
 // const Button = (props) => (
 //   <button className="btn" onClick={props.onClick}>

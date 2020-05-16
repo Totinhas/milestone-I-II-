@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
-
 import Input from "./components/Input";
 
 function App() {
@@ -10,12 +9,17 @@ function App() {
     setUserData({ ...userData, [event.target.id]: event.target.value });
   const onFormSubmit = (event) => {
     event.preventDefault();
-    console.log(userData);
+    console.log(event.target.value);
+  };
+
+  const validateForm = () => {
+    return userData.password && userData.password === userData.confirmpassword;
+
   };
   return (
     <div className="App">
       <header className="App-header">
-        <Form>
+        <Form onSubmit={validateForm() ? onFormSubmit : null}>
           <Input
             id="name"
             label="Your name"
