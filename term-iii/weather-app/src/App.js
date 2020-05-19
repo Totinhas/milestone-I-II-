@@ -2,6 +2,7 @@ import React from "react"; //import the React object from the "react" package
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import "./App.css"
 
 const APIKey = "1dd19a616dc63d6585c2578c4fa4c9e3";
 

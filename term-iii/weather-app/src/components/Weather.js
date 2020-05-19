@@ -3,27 +3,27 @@ import React from "react";
 class Weather extends React.Component {
   render() {
     return (
-      <div>
+      <div className="outPut">
         <img
           alt={this.props.icon}
           src={this.props.icon}
         />
 
         {this.props.country && this.props.city &&
-          <p>Location: {this.props.city}, {this.props.country} </p>}
+          <p><span className="title">Location:</span> {this.props.city}, {this.props.country} </p>}
         {this.props.temperatureMax &&
-          <p>Max: {Math.round(this.props.temperatureMax)} ºC</p>}
+          <p><span className="title">Max:</span> {Math.round(this.props.temperatureMax)} ºC</p>}
 
         {this.props.temperatureMin &&
-          <p>Min: {Math.round(this.props.temperatureMin)} ºC</p>}
+          <p><span className="title">Min:</span> {Math.round(this.props.temperatureMin)} ºC</p>}
 
         {this.props.humidity &&
-          <p>Humidity: {this.props.humidity}</p>}
+          <p><span className="title">Humidity:</span> {this.props.humidity}</p>}
 
         {this.props.feelsLike &&
-          <p>Feels like: {Math.round(this.props.feelsLike)} ºC</p>}
+          <p><span className="title">Feels like:</span> {Math.round(this.props.feelsLike)} ºC</p>}
 
-        {this.props.error && <p>{this.props.error}</p>}
+        {this.props.error && <p className="error">{this.props.error}</p>}
 
 
       </div>
