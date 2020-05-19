@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/milestone-I-II-/term-iii/weather-app/static/css/main.655da78b.chunk.css",
-    "main.js": "/milestone-I-II-/term-iii/weather-app/static/js/main.51e15770.chunk.js",
-    "main.js.map": "/milestone-I-II-/term-iii/weather-app/static/js/main.51e15770.chunk.js.map",
-    "runtime-main.js": "/milestone-I-II-/term-iii/weather-app/static/js/runtime-main.17335158.js",
-    "runtime-main.js.map": "/milestone-I-II-/term-iii/weather-app/static/js/runtime-main.17335158.js.map",
-    "static/js/2.3268fb0a.chunk.js": "/milestone-I-II-/term-iii/weather-app/static/js/2.3268fb0a.chunk.js",
-    "static/js/2.3268fb0a.chunk.js.map": "/milestone-I-II-/term-iii/weather-app/static/js/2.3268fb0a.chunk.js.map",
-    "index.html": "/milestone-I-II-/term-iii/weather-app/index.html",
-    "precache-manifest.b8ececc61c0ca68ca784aedb8111148d.js": "/milestone-I-II-/term-iii/weather-app/precache-manifest.b8ececc61c0ca68ca784aedb8111148d.js",
-    "service-worker.js": "/milestone-I-II-/term-iii/weather-app/service-worker.js",
-    "static/css/main.655da78b.chunk.css.map": "/milestone-I-II-/term-iii/weather-app/static/css/main.655da78b.chunk.css.map",
-    "static/js/2.3268fb0a.chunk.js.LICENSE.txt": "/milestone-I-II-/term-iii/weather-app/static/js/2.3268fb0a.chunk.js.LICENSE.txt"
+    "main.css": "/milestone-I-II-/static/css/main.655da78b.chunk.css",
+    "main.js": "/milestone-I-II-/static/js/main.e505f5ea.chunk.js",
+    "main.js.map": "/milestone-I-II-/static/js/main.e505f5ea.chunk.js.map",
+    "runtime-main.js": "/milestone-I-II-/static/js/runtime-main.53887538.js",
+    "runtime-main.js.map": "/milestone-I-II-/static/js/runtime-main.53887538.js.map",
+    "static/js/2.3268fb0a.chunk.js": "/milestone-I-II-/static/js/2.3268fb0a.chunk.js",
+    "static/js/2.3268fb0a.chunk.js.map": "/milestone-I-II-/static/js/2.3268fb0a.chunk.js.map",
+    "index.html": "/milestone-I-II-/index.html",
+    "precache-manifest.89d75c8280e3186ef89574d34798cc49.js": "/milestone-I-II-/precache-manifest.89d75c8280e3186ef89574d34798cc49.js",
+    "service-worker.js": "/milestone-I-II-/service-worker.js",
+    "static/css/main.655da78b.chunk.css.map": "/milestone-I-II-/static/css/main.655da78b.chunk.css.map",
+    "static/js/2.3268fb0a.chunk.js.LICENSE.txt": "/milestone-I-II-/static/js/2.3268fb0a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.17335158.js",
+    "static/js/runtime-main.53887538.js",
     "static/js/2.3268fb0a.chunk.js",
     "static/css/main.655da78b.chunk.css",
-    "static/js/main.51e15770.chunk.js"
+    "static/js/main.e505f5ea.chunk.js"
   ]
 }
