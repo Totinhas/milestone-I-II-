@@ -1,0 +1,30 @@
+form {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  color: salmon;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  display: block;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  margin: 0px auto 20px auto;
+}
+
+button {
+  width: 50%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  margin: 50px auto;
+  background-color: navy;
+  color: aliceblue;
+}

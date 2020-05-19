@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Milestone 1 of web development and user experience">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Sara Bretes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first milestone</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="milestone3.html">Milestone III</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="form">
+      <h1 class="animation">Coding is for everyone!</h1>
+      <form>
+          <label for="first-name">First Name</label>
+          <input placeholder="First Name" id="first-name" name="first-name" type="text"></input>
+          <label for="last-name">Last Name</label>
+          <input placeholder="Last Name" id="last-name" name="last-name" type="text"></input>
+          <label for="dob">Date of birth</label>
+          <input id="dob" type="date" name="bday">
+          <label for="gender">Gender</label>
+          <select id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="notsay">Prefer not to say</option>
+          </select>
+          <p>Are you enjoying coding?</p>
+         
+          <input id="yes" type="radio" name="yesno" value="Yes">
+          <label for="yes">Yes</label>
+          <input id="no" type="radio" name="yesno" value="no">
+          <label for="no">No</label>
+          <label for="more-info" >Please elaborate why</label>
+          <textarea id="more-info" placeholder="I love coding because..." maxlength="250"></textarea>
+          <p>What do you like to do when you're not coding?</p>
+          <div class="check">
+            <input type="checkbox" id="reading" name="reading">
+            <label for="reading">Reading</label>
+          </div class="check">
+          <div class="check">
+            <input type="checkbox" id="sleeping" name="sleeping">
+            <label for="sleeping" checked>Sleeping</label>
+          </div>
+          <div class="check"v>
+            <input type="checkbox" id="tvshows" name="tvshows">
+            <label for="tvshows">Watch TV</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="pub" name="pub">
+            <label for="pub">Go to the pub</label>
+          </div>
+          <input type="submit" value="Submit your form">
+         
+
+        
+      </form>
+
+
+
+      <ul id="results"> </ul>
+
+    </section>
+    <footer>
+      <strong><a href="mailto:sluisc01@mail.bbk.ac.uk?subject:My first milestone">Sara Bretes</strong> - Student #13175876
+    </footer>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,320 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #ffebeb;
+  color: #504163;
+  margin: 0px;
+  position: relative;
+}
+
+p {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+#background > p {
+  text-align: justify;
+}
+.form,
+#background {
+  background-color: #fff;
+  padding: 30px 30px;
+  margin-bottom: 60px;
+}
+a {
+  color: #c22557;
+  text-decoration: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+h1 {
+  color: #504163;
+  text-align: center;
+  font-weight: bold;
+}
+h1:hover {
+  font-size: 28px;
+  transition: 0.1s font-size linear;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top: 200px;
+
+  position: fixed;
+}
+footer a {
+  color: #ffffff;
+}
+nav {
+  margin: 0 auto;
+  background-color: #867f8f;
+  font-size: 18px;
+}
+nav:hover {
+  background-color: #9d2053;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+nav li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+nav a:hover {
+  color: #ffedbf;
+}
+label {
+  width: 100%;
+  display: inline-block;
+}
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 20px 0px;
+  -ms-box-sizing: border-box;
+  /*The box-sizing property allows you to define certain elements to fit an area in a certain way. This forces the browser to render the box with the specified width and height, and place the border and padding inside the box. */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 0 auto;
+  -ms-box-sizing: border-box;
+  /*The box-sizing property allows you to define certain elements to fit an area in a certain way. This forces the browser to render the box with the specified width and height, and place the border and padding inside the box. */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  margin: 0px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #504163;
+  color: #fff;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #9d2053;
+}
+footer {
+  background-color: #0e002f;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0px;
+}
+.far,
+.fab {
+  margin-right: 10px;
+}
+label {
+  width: 30%;
+  display: inline-block;
+}
+label[for="more-info"] {
+  width: 100%;
+  display: block;
+  margin: 20px 0px;
+}
+.check > label {
+  width: 80%;
+}
+
+.cnt {
+  text-align: center !important;
+}
+.far,
+.fab {
+  font-size: 30px;
+}
+
+#text > p {
+  text-align: justify;
+}
+.container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  text-align: center;
+  margin-top: 20px;
+}
+
+#main-contacts {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#email,
+#twitter {
+  padding: 50px 50px;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+iframe {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  border: 0;
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.map-responsive {
+  padding: 30px;
+}
+.map-responsive h2 {
+  margin-top: 0px;
+}
+
+.container > div:last-of-type {
+  margin-top: 5%;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn {
+  margin: 20px 0px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #504163;
+  color: #fff;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.btn:hover {
+  background-color: #9d2053;
+}
+
+.btn > a {
+  color: #fff;
+}
+.fas {
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  display: block !important;
+  position: relative;
+  padding: 30px 0px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#fizzbuzz {
+  display: block;
+  font-size: 60px;
+  color: #0e002f;
+}
+
+#try {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .form,
+  #background {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 30px;
+    margin-bottom: 60px;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 20px 30px;
+  }
+
+  .check {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+  }
+  .container {
+    display: -webkit-flex; /* Safari */
+    display: flex; /* Standard syntax */
+    position: relative;
+    width: 100%;
+  }
+  #email,
+  #twitter {
+    padding: 50px 50px;
+    width: 60%;
+  }
+
+  .container > div:first-of-type {
+    margin-right: 5%;
+  }
+
+  .container > div:last-of-type {
+    margin-top: 0;
+  }
+  .wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #photo img {
+    width: 150px;
+  }
+  #photo {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    margin-left: 50px;
+  }
+
+  #text {
+    display: inline-block;
+    width: 50%;
+  }
+}

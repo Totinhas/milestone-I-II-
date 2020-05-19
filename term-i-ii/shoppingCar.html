@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Milestone 1 of web development and user experience">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Sara Bretes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first milestone</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="shoppingstyle.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="milestone3.html">Milestone III</a></li>
+          <li><a href="shoppingCar.html">Shopping car</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="background">
+      <h3>Our products</h3>
+      <div class="products">
+
+          <div class="prod-image">
+            <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/51KAfU1aeKL._SX569_.jpg">
+          </div>
+          <div class="product-details">
+            <h4>Logitech Pebble M350 Pink</h4>
+            <p class="small">Modern, slim and beautiful pebble shape: Logitech Pebble has standout simplicity with a design that is nice to hold, feels great in your hand and is easy to carry around.</p>
+            <p class="price">Price: <span class="value">£15.99</span></p>
+            <form >
+              <label class="quantity-label">Quantity</label class="quantity-label">
+              <input class="quantity" type="number" name="quantity">
+              <button onclick="add()" class="add" type="button">Add</button>
+              <button  class="remove" type="button">Remove</button>
+              
+            </form>
+          </div>
+      </div>
+      <!--2nd product-->
+      <div class="products">
+
+        <div class="prod-image">
+          <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/819miX6IC4L._AC_SX679_.jpg">
+        </div>
+        <div class="product-details">
+          <h4>Logitech K380 Multi-Device Bluetooth Keyboard</h4>
+          <p class="small">Smart: Simplify your life; with the K380 wireless keyboard, type on and switch among any three Bluetooth devices.</p>
+          <p class="price">Price: <span class="value">£20.99</span></p>
+          <form >
+            <label class="quantity-label">Quantity</label class="quantity-label">
+            <input class="quantity" type="number" name="quantity" max="10">
+            <button onclick="add()" class="add" type="button">Add</button>
+            <button class="remove" type="button">Remove</button>
+          </form>
+        </div>
+    </div>
+      <!--End of 2nd product-->
+      <!--3rd product-->
+      <div class="products">
+
+        <div class="prod-image">
+          <img class="imgspec" src="https://images-na.ssl-images-amazon.com/images/I/61kH8An8nvL._AC_SX679_.jpg">
+        </div>
+        <div class="product-details">
+          <h4>Anker SoundCore min</h4>
+          <p class="small">Compact And Powerful: Super-portable Bluetooth speaker delivers powerful sound and robust bass through an advanced 5W driver and passive subwoofer.</p>
+          <p class="price">Price: <span class="value">£22.99</span></p>
+          <form >
+            <label class="quantity-label">Quantity</label class="quantity-label">
+            <input class="quantity" type="number" name="quantity" max="10">
+            <button onclick="add()" class="add" type="button">Add</button>
+            <button  class="remove" type="button">Remove</button>
+          </form>
+        </div>
+    </div>
+      <!--End of 3rd Product-->
+      <div class="total">
+        <p class="total-price">Total: £<span id="total-value"></span></p>
+        <p><strong>Your basket: </strong></p>
+        <ul id="yourBasket"></ul>
+       </div>
+    </div>
+ 
+    <footer>
+      <strong><a href="mailto:sluisc01@mail.bbk.ac.uk?subject:My first milestone">Sara Bretes</strong> - Student #13175876
+    </footer>
+
+
+    <script src="javascript.js"></script>
+
+  </body>
+</html>
